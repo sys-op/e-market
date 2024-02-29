@@ -6,7 +6,7 @@ Device::Device()
     if (_isLogging) std::cout << "Создано " << *this;
 }
 
-Device::Device(const unsigned &batteryLife, const std::string &vendor, const std::string &model) : _batteryLife {batteryLife}, _vendor {vendor}, _model {model}
+Device::Device(const unsigned &batteryLife, const std::string &vendor, const std::string &model) : _batteryLife {batteryLife}, IElectronics(vendor, model)
 {
     if (_isLogging) std::cout << "Создано " << *this;
 }

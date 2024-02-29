@@ -6,7 +6,7 @@ Appliances::Appliances()
     if (_isLogging) std::cout << "Создана " << *this;
 }
 
-Appliances::Appliances(const unsigned &weight, const std::string &vendor, const std::string &model) : _weight{weight}, _vendor {vendor}, _model {model}
+Appliances::Appliances(const unsigned &weight, const std::string &vendor, const std::string &model) : _weight{weight}, IElectronics(vendor, model)
 {
     if (_isLogging) std::cout << "Создана " << *this;
 }

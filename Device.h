@@ -5,8 +5,8 @@ class Device : virtual public IElectronics
 {
 protected:
     unsigned _batteryLife {0};
-    std::string _vendor;
-    std::string _model;
+    // std::string _vendor;
+    // std::string _model;
     const bool _isLogging {false};
 public:
     Device();

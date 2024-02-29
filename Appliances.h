@@ -6,8 +6,8 @@ class Appliances : virtual public IElectronics
 {
 protected:
     unsigned int _weight {0};
-    std::string _vendor;
-    std::string _model;
+    // std::string _vendor;
+    // std::string _model;
     const bool _isLogging {false};
 public:
     Appliances();
